@@ -1,0 +1,94 @@
+.note-warper {
+  position: relative;
+  display: flex;
+  gap: 10px;
+}
+
+.note-item {
+  background-color: #f4f2ff;
+  padding: 13px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+
+  position: relative;
+  left: -20px;
+  animation-name: move-right;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes move-right {
+  from {
+    left: -20px;
+    opacity: 0.5;
+  }
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+h3 {
+  color: black;
+  font-weight: 700;
+  margin: 7px 0px;
+}
+
+.note-item > div {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0px;
+}
+
+span {
+  padding: 0px 7px;
+  border-radius: 5px 8px 5px 8px;
+  margin: 2px;
+}
+.priority-low span:nth-child(1) {
+  background-color: rgb(0, 216, 0);
+}
+.priority-medium span:nth-child(-n + 2) {
+  background-color: rgb(255, 212, 20);
+}
+.priority-high span:nth-child(n) {
+  background-color: rgb(255, 51, 48);
+}
+
+.client {
+  margin: 0;
+  color: #2b1887;
+}
+.date {
+  margin: 0;
+}
+
+.task-actions {
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  padding: 0.3rem;
+  flex-basis: 20%;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transition: display 0.3s ease-in;
+  display: none;
+}
+.note-warper:hover > .task-actions {
+  display: flex;
+}
+.task-actions span {
+  background-color: #b2a2ff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+.task-actions span:hover {
+  cursor: pointer;
+  background-color: #b5a7ffd2;
+
+}

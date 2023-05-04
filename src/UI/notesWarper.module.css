@@ -1,0 +1,35 @@
+.warper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #d5ccff;
+  color: #2b1887;
+  padding: 30px 13px;
+  border-radius: 10px;
+  width: 50%;
+  height: max-content;
+  margin: 20px 20px;
+}
+#title-container {
+  background-color: aqua;
+  margin: 0px 0px 0.8em 1rem;
+}
+.icon {
+  display: block;
+}
+
+h2 {
+  display: inline-block;
+  margin: 0px 0px 0px 10px;
+  font-size: 1.7rem;
+  font-family:Kanit;
+}
+
+@media (max-width: 600px) {
+  h2 {
+    font-size: 1.2em;
+  }
+  .warper{
+    margin: 10px;
+  }
+}

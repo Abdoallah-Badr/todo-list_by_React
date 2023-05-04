@@ -1,0 +1,19 @@
+.action{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.action button{
+    padding: 0.5em 1em ;
+    border-radius: 5px;
+    border: none;
+}
+.action button:hover{
+    cursor: pointer;
+}
+
+.action button:first-of-type {
+    color: aliceblue;
+    background-color: rgb(179, 60, 60);
+}

@@ -1,0 +1,25 @@
+/* .task-actions {
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  padding: 0.3rem;
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  opacity: 0.25;
+  transition: opacity 0.3s ease-in;
+
+} */
+
+.task-actions span {
+  background-color: #b2a2ff;
+  padding: 0.5rem;
+  border-radius: 4px;
+  text-align: center;
+}
+.task-actions span:hover {
+  cursor: pointer;
+  background-color: #b5a7ffd2;
+
+}

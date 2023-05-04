@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from "react";
+import "./App.css";
+import AddTaskForm from "./components/addTaskForm";
+import ToDoList from "./components/todoList";
+import DoneList from "./components/doneList";
+import { notesContext } from "./store/context";
 
 function App() {
+  const ctx = useContext(notesContext);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <div className="app">
+      <h1> React To-Do List </h1>
+      {!ctx.showAddNote && (
+        <button
+          className="add-new-task"
+          onClick={() => {
+            ctx.onShowAddNote();
+          }}
         >
-          Learn React
-        </a>
-      </header>
+          <i className="fa-solid fa-plus"></i>
+        </button>
+      )}
+      {ctx.showAddNote && <AddTaskForm />}
+      <div className="notes-container">
+        <ToDoList />
+        <DoneList />
+      </div>
     </div>
   );
 }
