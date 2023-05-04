@@ -1,63 +1,43 @@
 # To-DO List by React 
 
-This is my first design by HTML & CSS
-This is a solution to the [Clipboard landing page challenge on Frontend Mentor]()
+This is a simple Todo List application built using React. The purpose of this project is to demonstrate the basics of React and React hooks.
 
-## Table of contents
 
-- [Overview](#overview)
-  - [The challenge](#the-challenge)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-- [My process](#my-process)
-  - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
-  - [Useful resources](#useful-resources)
-- [Author](#author)
+### Features
+The Todo List application has the following features:
 
-## Overview
-
-### The challenge
-
-I want user be able to:
-
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Align layout elements in right way
+- Add a new todo item.
+- Mark a todo item as complete
+- Delete a todo item
+- return the completed taskes
+- restore taskes from localstorage
 
 ### Screenshot
 
-![](.//screenshot/Screenshot 2022-02-15 at 14-18-47 Abdoallah-Badr Clipboard landing page.pngscreenshot.jpg)
+![](./assests/screenshots/one.png)
+![](./assests/screenshots/all.png)
+
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Abdoallah-Badr/clipboard-landing-page)
-- Live Site URL: [Add live site URL here](https://abdoallah-badr.github.io/clipboard-landing-page)
+- Solution URL: [Add solution URL here](https://github.com/Abdoallah-Badr/todo-list_react)
+- Live Site URL: [Add live site URL here](https://todo-list-react-badr.vercel.app/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 markup
+- ReactJs 
+- javascript
 - CSS custom properties
-- Flexbox
-- CSS Grid
+
 
 ### What I learned
 
-- i learnt more about css flexbox and grid .
-- forced many problem in layout alignment
-- how make the desgin more responsive .
+-  appling react key concepts, such as components and state management.
+- learn about srtucturing react app.
+- write clean, maintainable React code.
 
-### Useful resources
-
-- [resource 1](https://www.developer.mozilla.org.com)
-
-- [resource 2](https://www.css-tricks.com)
-
-- [resource 3](https://codepen.io)
 
 ## Author
-
-- Frontend Mentor - [@AbdoallahBadr](https://www.frontendmentor.io/profile/Abdoallah-Badr)
 - linkedin - [@AbdoallahBadr](https://www.linkedin.com/in/abdoallah-badr-5b2bb1250/)
