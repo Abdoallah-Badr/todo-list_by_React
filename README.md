@@ -14,7 +14,7 @@ The Todo List application has the following features:
 
 ### Screenshot
 
-![](./assets/screenshots/one.png)
+![](./assets/screenshots/add.png)
 ![](./assets/screenshots/all.png)
 
 
