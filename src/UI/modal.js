@@ -4,17 +4,13 @@ import ReactDOM from "react-dom";
 import { notesContext } from "../store/context";
 
 const overlayPortal = document.getElementById("overlays");
-const Backdrop = (props) => {
+const Backdrop = () => {
   const ctx = useContext(notesContext);
   return (
     <div
-      onMouseLeave={() => {
-        window.addEventListener("mouseleave", () => {
-          console.log('ok man')
-          ctx.onShowDeletionMsg();
-        });
+      onClick={() => {
+        ctx.showAddNote ? ctx.onShowAddNote() : ctx.onShowDeletionMsg();
       }}
-      onClick={props.onClose}
       className={classes.backdrop}
     />
   );
@@ -29,17 +25,9 @@ const ModalOverlay = (props) => {
 };
 
 const Modal = (props) => {
-  const ctx = useContext(notesContext);
   return (
     <>
-      {ReactDOM.createPortal(
-        <Backdrop
-          onClose={() => {
-            ctx.showAddNote ? ctx.onShowAddNote() : ctx.onShowDeletionMsg();
-          }}
-        />,
-        overlayPortal
-      )}
+      {ReactDOM.createPortal(<Backdrop />, overlayPortal)}
       {ReactDOM.createPortal(
         <ModalOverlay>{props.children}</ModalOverlay>,
         overlayPortal

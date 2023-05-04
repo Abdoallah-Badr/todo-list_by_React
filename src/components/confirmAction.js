@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import Modal from "../UI/modal";
 import classes from "./confirmAction.module.css";
 import { notesContext } from "../store/context";

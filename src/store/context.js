@@ -69,11 +69,9 @@ const ContextProvider = (props) => {
   const [showDeletionMsg, setShowDeletionMsg] = useState(false);
 
   const toggleAddNote = () => {
-    console.log('form adding')
     setShowAddNote((state) => !state);
   };
   const toggleShowDeletionMsg = () => {
-    console.log('form deletion')
     setShowDeletionMsg((state) => !state);
   };
 

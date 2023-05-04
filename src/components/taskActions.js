@@ -6,14 +6,15 @@ import ConfirmAction from "./confirmAction";
 const TaskActions = (props) => {
   const ctx = useContext(notesContext);
   return (
-    <>{props.listName === "todo" ? (
+    <>
+    {props.listName === "todo" ? (
         <span
           className={classes["task-done"]}
           onClick={() => {
             ctx.onUpgradueNote(props.id);
           }}
         >
-          <i class="fa-solid fa-check"></i>
+          <i className="fa-solid fa-check"></i>
         </span>
       ) : null}
       {ctx.showDeletionMsg && (
@@ -25,7 +26,7 @@ const TaskActions = (props) => {
           ctx.onShowDeletionMsg();
         }}
       >
-        <i class="fa-solid fa-trash"></i>
+        <i className="fa-solid fa-trash"></i>
       </span>
       {props.listName === "done" ? (
         <span
@@ -34,11 +35,12 @@ const TaskActions = (props) => {
             ctx.onReturnNote(props.id);
           }}
         >
-          <i class="fa-solid fa-arrow-left"></i>
+          <i className="fa-solid fa-arrow-left"></i>
         </span>
       ) : null}
     </>
       
+
   );
 };
 

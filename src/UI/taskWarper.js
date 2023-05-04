@@ -1,11 +1,11 @@
-import classes from "./notesWarper.module.css";
+import classes from "./taskWarper.module.css";
 
-const NotesWarper = (props) => {
+const TaskWarper = (props) => {
   const icon =
     props.listName === "done" ? (
-      <i class="icon fa-regular fa-circle-check fa-2xl"></i>
+      <i className="icon fa-regular fa-circle-check fa-2xl"></i>
     ) : (
-      <i class="icon fa-regular fa-clipboard fa-2xl"></i>
+      <i className="icon fa-regular fa-clipboard fa-2xl"></i>
     );
   const title = props.listName === "done" ? "Done" : "To-Do";
 
@@ -19,4 +19,4 @@ const NotesWarper = (props) => {
     </div>
   );
 };
-export default NotesWarper;
+export default TaskWarper;
