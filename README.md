@@ -43,4 +43,8 @@ The Todo List application has the following features:
 
 
 ## Author
+<<<<<<< HEAD
 - linkedin - [@AbdoallahBadr](https://www.linkedin.com/in/abdoallah-badr-5b2bb1250/)
+=======
+- linkedin - [@AbdoallahBadr](https://www.linkedin.com/in/abdoallah-badr-5b2bb1250/)
+>>>>>>> f93773ea8862919abd25c8af66e102183951b8ed
