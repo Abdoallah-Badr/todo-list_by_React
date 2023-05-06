@@ -22,14 +22,19 @@ h2 {
   display: inline-block;
   margin: 0px 0px 0px 10px;
   font-size: 1.7rem;
-  font-family:Kanit;
+  font-family: Kanit;
 }
 
 @media (max-width: 600px) {
   h2 {
     font-size: 1.2em;
   }
-  .warper{
+  .warper {
     margin: 10px;
+  }
+}
+@media (max-width: 450px) {
+  .warper {
+    width: 80%;
   }
 }

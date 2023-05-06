@@ -34,7 +34,7 @@ const AddTaskForm = (props) => {
     ctx.onShowAddNote();
   };
   return (
-    <AddTaskFormUi onClose={props.clickHandler}>
+    <AddTaskFormUi>
         <form id="note-form" className={classes.form}>
           <div>
             <div className={classes.info}>

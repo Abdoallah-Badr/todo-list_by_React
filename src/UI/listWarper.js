@@ -1,6 +1,6 @@
-import classes from "./taskWarper.module.css";
+import classes from "./listWarper.module.css";
 
-const TaskWarper = (props) => {
+const ListWarper = (props) => {
   const icon =
     props.listName === "done" ? (
       <i className="icon fa-regular fa-circle-check fa-2xl"></i>
@@ -19,4 +19,4 @@ const TaskWarper = (props) => {
     </div>
   );
 };
-export default TaskWarper;
+export default ListWarper;

@@ -3,7 +3,7 @@ import Modal from "./modal";
 
 const AddTaskFormUi = (props) => {
   return (
-    <Modal onClose = {props.onClose}>
+    <Modal>
         {props.children}
     </Modal>
   );

@@ -1,17 +1,17 @@
 import { useContext } from "react";
 import TaskItem from "./taskItem";
-import TaskWarper from "../UI/taskWarper";
+import ListWarper from "../UI/listWarper";
 import { notesContext } from "../store/context";
 
 const ToDoList = () => {
   const ctx = useContext(notesContext);
   return (
-    <TaskWarper listName={"todo"}>
+    <ListWarper listName={"todo"}>
       {ctx.toDoNotes &&
         ctx.toDoNotes.map((item) => {
           return <TaskItem key={item.id} itemData={item} listName={"todo"} />;
         })}
-    </TaskWarper>
+    </ListWarper>
   );
 };
 
